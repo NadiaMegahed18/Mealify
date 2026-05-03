@@ -1,0 +1,224 @@
+:root {
+  --section-color: #eeeeee;
+  --main-color: #212529;
+  background-color: #fff;
+  --heading-color: #37373f;
+  --span-color: #ce1212;
+  --color-light: hsl(0, 0, 100%);
+  --color-span2: #7f7f90;
+  --white-color: #fff;
+  --nav-list-bg: #fff;
+  --nav-bg: #ffffffb0;
+  --icon-color-hover: #37373f;
+  --icon-color: #56565b7a;
+  --button-hover: rgb(234, 4, 4);
+  --p-color: #4f4f5abd;
+  --ditails-color: hsl(0, 0%, 96%);
+  --selection-color: #da5656;
+  --var-padding: 50px 0;
+}
+/* ========>container<======== */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 15px;
+  }
+}
+
+/* ?============================>navbar section<==========--============= */
+@media screen and (max-width: 1200px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    transform: translatex(100%);
+    /* display: none; */
+    position: absolute;
+    background-color: var(--nav-list-bg);
+    flex-direction: column;
+    width: 350px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-inline: 10px;
+    gap: 0px;
+  }
+  nav ul li {
+    padding-block: 20px;
+  }
+  .exit {
+    display: block;
+    text-align: right;
+  }
+  nav .mode {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}
+/* ?============================>Home section<==========--============= */
+@media screen and (min-width: 1200px) {
+  .home {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .home .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .home .container > * {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .header-content h2 {
+    margin-top: 25px;
+  }
+  .home .header-content .btn1 {
+    border-radius: 100vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ?============================>chefs section<==========--============= */
+@media screen and (max-width: 992px) {
+  .chefs-cards .card {
+    width: calc(calc(100% - var(--gap) * 1) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chefs-cards .card {
+    width: 100%;
+  }
+}
+/* ?============================>Gallery section<==========--============= */
+@media screen and (min-width: 1400px) {
+  .Gallery-images {
+    height: 1145px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .Gallery-images {
+    height: 986px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Gallery-images {
+    height: 830px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Gallery-images {
+    height: 1390px;
+  }
+  .Gallery-images picture {
+    width: calc(calc(100% - var(--gap) * 1) / 2);
+  }
+  .pizza {
+    order: 1;
+  }
+  .burger {
+    order: 2;
+  }
+  .pizza-slice {
+    order: 3;
+  }
+  .potato {
+    order: 4;
+  }
+  .fried {
+    order: 6;
+  }
+  .steak {
+    order: 5;
+  }
+  .kebab {
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .Gallery-images {
+    height: auto;
+  }
+  .Gallery-images picture {
+    width: 100%;
+  }
+}
+
+/* ?============================>Contact section<==========--============= */
+@media screen and (max-width: 992px) {
+  .Contact form .input1 input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .Contact .Contact-info > div {
+    width: 100%;
+  }
+}
+
+/* ?============================>Footer section<==========--============= */
+@media screen and (max-width: 1200px) {
+  .footer .footer1 {
+    width: calc(calc(100% - var(--gap) * 1) / 2);
+    order: 1;
+  }
+  .footer .footer3 {
+    width: calc(calc(100% - var(--gap) * 1) / 2);
+    order: 1;
+  }
+  .footer .footer2 {
+    width: 100%;
+
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .footer .footer1,
+  .footer .footer2,
+  .footer .footer2
+   {
+    width: 100%;
+    order: 1;
+  }
+
+}
